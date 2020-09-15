@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prb.FilaApiRest.ApiModel\Prb.FilaApiRest.ApiModel.csproj" />
+    <ProjectReference Include="..\Prb.FilaApiRest.Domain\Prb.FilaApiRest.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

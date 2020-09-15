@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6XQRjl3YmtGq6gz7XqW10mfdOv7iV6EmeXd/miwzoNaWig524geRlyGl3qhwSpixJMT66veZQfzgA6begk07fQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucasc\\OneDrive - PARANÁ BANCO S.A\\Prb.FilaApiRest\\src\\Prb.FilaApiRest.Domain\\Prb.FilaApiRest.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucasc\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\lucasc\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\lucasc\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

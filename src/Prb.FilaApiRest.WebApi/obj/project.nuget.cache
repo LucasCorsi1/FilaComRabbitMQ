@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "/cdpaYQVmJyt/6a4T4ztNRFHauZspbgGakofC0iPpVXQmrDxECYwZXxn8O51G02zOhhxkZ3He6xO+QWZrsE2qA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucasc\\OneDrive - PARANÁ BANCO S.A\\Prb.FilaApiRest\\src\\Prb.FilaApiRest.WebApi\\Prb.FilaApiRest.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucasc\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\lucasc\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\lucasc\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\lucasc\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\lucasc\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\lucasc\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

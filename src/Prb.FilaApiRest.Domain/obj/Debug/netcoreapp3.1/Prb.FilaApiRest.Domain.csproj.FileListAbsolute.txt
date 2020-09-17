@@ -5,4 +5,5 @@ C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Domain\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Domain.AssemblyInfo.cs
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Domain\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Domain.dll
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Domain\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Domain.pdb
+C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Domain\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Domain.csprojAssemblyReference.cache
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Domain\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Domain.csproj.CoreCompileInputs.cache

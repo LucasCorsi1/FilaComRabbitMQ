@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Prb.FilaApiRest.ApiModel;
 using Prb.FilaApiRest.Application.Interface;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Prb.FilaApiRest.WebApi.Controllers
@@ -22,11 +23,11 @@ namespace Prb.FilaApiRest.WebApi.Controllers
 
         [HttpPost]
         [Route("order")]
-        public async Task<IActionResult> InsertOrder(OrderViewModel.Request order)
+        public async Task<IActionResult> InsertOrder(OrderViewModel.Request order , CancellationToken cancellationToken = default)
         {
             try
             {
-                var response = await _orderApllication.InsertOrder(order);
+                var response = await _orderApllication.InsertOrder(order, cancellationToken);
                 return Accepted(response);
             }
             catch (Exception ex)

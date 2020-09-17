@@ -8,7 +8,7 @@ C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.CrossCutting.Mapping\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.CrossCutting.Mapping.csprojAssemblyReference.cache
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.CrossCutting.Mapping\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.CrossCutting.Mapping.AssemblyInfoInputs.cache
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.CrossCutting.Mapping\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.CrossCutting.Mapping.AssemblyInfo.cs
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.CrossCutting.Mapping\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.CrossCutting.Mapping.csproj.CoreCompileInputs.cache
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.CrossCutting.Mapping\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.CrossCutting.Mapping.csproj.CopyComplete
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.CrossCutting.Mapping\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.CrossCutting.Mapping.dll
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.CrossCutting.Mapping\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.CrossCutting.Mapping.pdb
+C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.CrossCutting.Mapping\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.CrossCutting.Mapping.csproj.CoreCompileInputs.cache

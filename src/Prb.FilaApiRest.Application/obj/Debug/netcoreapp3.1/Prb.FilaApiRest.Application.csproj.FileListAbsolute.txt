@@ -8,7 +8,7 @@ C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Application\bin\Debug\netcoreapp3.1\Prb.FilaApiRest.Application.dll
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Application\bin\Debug\netcoreapp3.1\Prb.FilaApiRest.Application.pdb
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Application\bin\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.pdb
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Application\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Application.csproj.CoreCompileInputs.cache
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Application\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Application.csproj.CopyComplete
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Application\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Application.dll
 C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Application\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Application.pdb
+C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.Application\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.Application.csproj.CoreCompileInputs.cache

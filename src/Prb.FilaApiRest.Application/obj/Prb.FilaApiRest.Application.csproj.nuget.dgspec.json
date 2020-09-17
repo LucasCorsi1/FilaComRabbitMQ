@@ -108,6 +108,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.8, )"
             }
           },
           "imports": [
@@ -167,9 +175,25 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.Azure.ServiceBus": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.2.1, )"
+            },
+            "Scrutor.AspNetCore": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

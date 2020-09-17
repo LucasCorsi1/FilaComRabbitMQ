@@ -5,11 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.0.0" />
     <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Prb.FilaApiRest.Application\Prb.FilaApiRest.Application.csproj" />
+    <ProjectReference Include="..\Prb.FilaApiRest.CrossCutting.Mapping\Prb.FilaApiRest.CrossCutting.Mapping.csproj" />
     <ProjectReference Include="..\Prb.FilaApiRest.Domain\Prb.FilaApiRest.Domain.csproj" />
   </ItemGroup>
 

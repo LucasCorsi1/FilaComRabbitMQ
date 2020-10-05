@@ -1,9 +1,5 @@
-﻿using Microsoft.Azure.ServiceBus;
+﻿using Prb.FilaApiRest.Domain.Rabbit.Interfaces;
 using Prb.FilaApiRest.Domain.Service.Interface;
-using RabbitMQ.Client;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
@@ -12,12 +8,16 @@ namespace Prb.FilaApiRest.Domain.Service
 {
     public class OrderService : IOrderService
     {
-        private readonly RabbitMQ _rabbitMQ = new RabbitMQ();
+        private IRabbitManager _manager;
+
+        public OrderService(IRabbitManager rabbitManager)
+        {
+            _manager = rabbitManager;
+        }
 
         public async Task<Order> InsertOrder(Order order, CancellationToken cancellationToken = default)
         {
-            string message =  JsonSerializer.Serialize(order);
-            await _rabbitMQ.SendToQueue(message,cancellationToken);
+            _manager.Publish(order, "teste", "fanout", "OrderQueue");
             return order;
         }
     }

@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Prb.FilaApiRest.ApiModel;
 using Prb.FilaApiRest.Domain;
-using System;
 
 namespace Prb.FilaApiRest.CrossCutting.Mapping
 {

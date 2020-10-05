@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Prb.FilaApiRest.ApiModel
+﻿namespace Prb.FilaApiRest.ApiModel
 {
     public class OrderViewModel
     {
@@ -11,6 +9,6 @@ namespace Prb.FilaApiRest.ApiModel
             public double Price { get; set; }
 
         }
-        public class Response : OrderViewModel { }
+        public class Response : Request { }
     }
 }

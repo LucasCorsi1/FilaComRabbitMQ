@@ -3,7 +3,6 @@ using Prb.FilaApiRest.ApiModel;
 using Prb.FilaApiRest.Application.Interface;
 using Prb.FilaApiRest.Domain;
 using Prb.FilaApiRest.Domain.Service.Interface;
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 

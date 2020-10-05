@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Prb.FilaApiRest.Domain
+﻿namespace Prb.FilaApiRest.Domain
 {
     public class Order
     {

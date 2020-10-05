@@ -1,9 +1,0 @@
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\bin\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.deps.json
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\bin\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.dll
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\bin\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.pdb
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.csprojAssemblyReference.cache
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.AssemblyInfoInputs.cache
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.AssemblyInfo.cs
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.csproj.CoreCompileInputs.cache
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.dll
-C:\Users\lucasc\OneDrive - PARANÁ BANCO S.A\Prb.FilaApiRest\src\Prb.FilaApiRest.ApiModel\obj\Debug\netcoreapp3.1\Prb.FilaApiRest.ApiModel.pdb

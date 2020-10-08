@@ -9,30 +9,34 @@ using System.Threading.Tasks;
 namespace Prb.FilaApiRest.WebApi.Controllers
 {
     [ApiController]
-    [Route("api/")]
+    [Route("order")]
     public class OrderController : ControllerBase
     {
         private readonly ILogger<OrderController> _logger;
         private readonly IOrderApllication _orderApllication;
 
-        public OrderController(ILogger<OrderController> logger , IOrderApllication orderApllication)
+
+        public OrderController(
+            ILogger<OrderController> logger,
+            IOrderApllication orderApllication)
         {
             _logger = logger;
             _orderApllication = orderApllication;
         }
 
+
         [HttpPost]
-        [Route("order")]
-        public async Task<IActionResult> InsertOrder(OrderViewModel.Request order , CancellationToken cancellationToken = default)
+        [Route("/rabbitwithmasstransit")]
+        public async Task<IActionResult> InsertOrderMassTransit(OrderViewModel.Request order, CancellationToken cancellationToken = default)
         {
             try
             {
-                var response = await _orderApllication.InsertOrder(order, cancellationToken);
-                return Accepted(response);
+                await _orderApllication.InsertWithMassTransit(order);
+                return Ok("Ordem Aceita");
             }
             catch (Exception ex)
             {
-                _logger.LogError("Erro ao criar pedido", ex);
+                _logger.LogError("Erro ao criar Ordem", ex);
 
                 return new StatusCodeResult(500);
             }

@@ -1,23 +1,25 @@
-﻿using Prb.FilaApiRest.Domain.Rabbit.Interfaces;
+﻿using Prb.FilaApiRest.Domain.AzureServiceBus;
+using Prb.FilaApiRest.Domain.RabbitMQ;
 using Prb.FilaApiRest.Domain.Service.Interface;
-using System.Text.Json;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Prb.FilaApiRest.Domain.Service
 {
     public class OrderService : IOrderService
     {
-        private IRabbitManager _manager;
+        private readonly IAzureServiceBusService _azureServiceBus;
+        private readonly IRabitMqService _rabitMq;
 
-        public OrderService(IRabbitManager rabbitManager)
+        public OrderService( IAzureServiceBusService azureServiceBus, IRabitMqService rabitMq)
         {
-            _manager = rabbitManager;
+            _azureServiceBus = azureServiceBus;
+            _rabitMq = rabitMq;
         }
 
-        public async Task<Order> InsertOrder(Order order, CancellationToken cancellationToken = default)
+        public async Task<Order> InsertWithMassTransit(Order order)
         {
-            _manager.Publish(order, "teste", "fanout", "OrderQueue");
+            await _azureServiceBus.Publish(order);
+            await _rabitMq.Publish(order);
             return order;
         }
     }

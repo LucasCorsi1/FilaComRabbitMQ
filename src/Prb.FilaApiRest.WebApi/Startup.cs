@@ -19,7 +19,6 @@ namespace Prb.FilaApiRest.WebApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSwaggerGen(c =>
@@ -32,10 +31,8 @@ namespace Prb.FilaApiRest.WebApi
             services.AddMappings();
             services.AddApplicationServices(Configuration);
             services.AddDomainServices(Configuration);
-            services.AddRabbit();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

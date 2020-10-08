@@ -1,10 +1,12 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MassTransit;
+using MassTransit.MultiBus;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.ObjectPool;
-using Prb.FilaApiRest.Domain.Rabbit;
-using Prb.FilaApiRest.Domain.Rabbit.Interfaces;
+using Prb.FilaApiRest.Domain.AzureServiceBus;
+using Prb.FilaApiRest.Domain.RabbitMQ;
 using Prb.FilaApiRest.Domain.Service;
 using RabbitMQ.Client;
+using System;
 
 namespace Prb.FilaApiRest.Domain
 {
@@ -13,24 +15,38 @@ namespace Prb.FilaApiRest.Domain
         public static IServiceCollection AddDomainServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.RegisterServices();
-            services.RegisterOptions(configuration);
+            services.ConfigureMassTransitRabbit();
             return services;
         }
 
-        public static IServiceCollection AddRabbit(this IServiceCollection services)
+        private static void ConfigureMassTransitRabbit(this IServiceCollection services)
         {
-            services.AddSingleton<ObjectPoolProvider, DefaultObjectPoolProvider>();
-            services.AddSingleton<IPooledObjectPolicy<IModel>, RabbitModel>();
-            services.AddSingleton<IRabbitManager, RabbitManager>();
+            services.AddMassTransit<IAzureServiceBusService>(x =>
+            {
+                x.UsingAzureServiceBus((context, cfg) =>
+                {
+                    cfg.Host("Endpoint=sb://prbbabysharks.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=HvNm7m+t5ZTFO0gFQZx/0qfw4qJtMmEzzNIo6HgLXPc=");
+                    cfg.ReceiveEndpoint("teste", e =>
+                    {
+                        e.PrefetchCount = 100;
+                        e.MaxConcurrentCalls = 100;
+                        e.LockDuration = TimeSpan.FromMinutes(5);
+                        e.MaxAutoRenewDuration = TimeSpan.FromMinutes(30);
+                    });
+                });
+            });
 
-            return services;
+            services.AddMassTransit<IRabitMqService>(x => {
+                x.UsingRabbitMq((context, cfg) =>
+                {
+                    cfg.ReceiveEndpoint("Prb.FilaApiRest.Domain:Order", e =>
+                    {
+                    });
+                });
+            });
+
+            services.AddMassTransitHostedService();
         }
-
-        private static void RegisterOptions(this IServiceCollection services, IConfiguration configuration)
-        {
-            services.Configure<RabbitOptions>(configuration.GetSection("rabbit"));
-        }
-
 
         private static void RegisterServices(this IServiceCollection services)
         {

@@ -3,7 +3,6 @@ using Prb.FilaApiRest.ApiModel;
 using Prb.FilaApiRest.Application.Interface;
 using Prb.FilaApiRest.Domain;
 using Prb.FilaApiRest.Domain.Service.Interface;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Prb.FilaApiRest.Application
@@ -17,12 +16,13 @@ namespace Prb.FilaApiRest.Application
             _mapper = mapper;
             _orderService = orderService;
         }
-        public async Task<OrderViewModel.Response> InsertOrder(OrderViewModel.Request request, CancellationToken cancellationToken = default)
+
+        public async Task<OrderViewModel.Response> InsertWithMassTransit(OrderViewModel.Request request)
         {
             var order = _mapper.Map<Order>(request);
-            var orderService = await _orderService.InsertOrder(order,cancellationToken);
+            var orderService = await _orderService.InsertWithMassTransit(order);
             var response = _mapper.Map<OrderViewModel.Response>(orderService);
-            return response;
+            return response; ;
         }
     }
 }

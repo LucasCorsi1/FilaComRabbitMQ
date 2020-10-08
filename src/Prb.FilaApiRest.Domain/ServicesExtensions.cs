@@ -25,7 +25,7 @@ namespace Prb.FilaApiRest.Domain
             {
                 x.UsingAzureServiceBus((context, cfg) =>
                 {
-                    cfg.Host("Endpoint=sb://prbbabysharks.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=HvNm7m+t5ZTFO0gFQZx/0qfw4qJtMmEzzNIo6HgLXPc=");
+                    cfg.Host("sua-string");
                     cfg.ReceiveEndpoint("teste", e =>
                     {
                         e.PrefetchCount = 100;
